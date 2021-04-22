@@ -1,0 +1,94 @@
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+#header{
+    height: 100px;
+    background-color: #a7c1d9;
+    line-height: 100px;
+    align-items: center;
+}
+
+.description {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    background-color: #322348;
+    color: white;
+    font-size: 14px;
+    align-items: center;
+}
+
+nav .menu{
+    display: flex;
+    justify-content: flex-end;
+}
+nav .menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: flex-end;
+}
+nav .menu ul li{
+    padding-left:15px;
+    margin: 0;
+    color: white;
+    font-weight: 200;
+    
+}
+.title_content{
+    margin-bottom: 10px;
+    margin-top: 20px;
+}
+.title h2{
+    color: rgb(104, 102, 102);
+}
+#textarea textarea{
+    width: 100%;
+    border: 1px solid rgb(201, 197, 197);
+    outline: 0;
+    border-radius: 5px;
+    padding: 10px;
+    height: 300px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 300;
+}
+nav .menu ul li a{
+    text-decoration: none;
+    color: white;
+    font-weight: 300;
+}
+
+/* buttons */
+.buttons button{
+    cursor: pointer;
+    border: 1px solid rgb(209, 205, 205);
+    padding: 5px 10px;
+    color: white;
+    background-color: teal;
+    outline: 0;
+
+}
+
+/* footer */
+.footer h3{
+    color: rgb(184, 184, 184);
+
+}
+/* sobre */
+
+.sobre{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* contato */
+.contacto{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}

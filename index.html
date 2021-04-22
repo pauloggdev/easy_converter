@@ -1,12 +1,152 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fast Email</title>
+    <title>Easy Converter</title>
+    
+    <link rel="stylesheet" href="src/css/easyconverter.css">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap" rel="stylesheet">    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
 </head>
+
 <body>
-    <h1>easy_converter</h1>
+
+
+    <div class="row">
+        <div class="col-md-12">
+            <div class="description">
+                <h6>easy converting is an open source project. We are in version 1.0</h6>
+            </div>
+        </div>
+    </div>
+
+    <div id="header">
+        <nav>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4">
+                        LOGO
+                    </div>
+                    <div class="col-md-8">
+                        <div class="menu">
+                            <ul>
+                                <li>
+                                    <a href="">Home</a>
+                                </li>
+                                <li>
+                                    <a href="">Sobre</a>
+                                </li>
+                                <li>
+                                    <a href="">Contacto</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <div class="container">
+        <div class="row title_content">
+            <div class="col-md-12">
+                <div class="title">
+                    <h2>Converter texto</h2>
+                </div>
+
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12" id="textarea">
+                <textarea name="" autofocus></textarea>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="buttons">
+                    <button id="btnMaiusculo">Maiusculo</button>
+                    <button id="btnMinusculo">Minuscula</button>
+                    <button id="limpar">Limpar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="sobre">
+                        <h3>Sobre nós</h3>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Inventore error ea iste accusamus velit consequuntur hic magnam quae, et totam?
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="contacto">
+                        <h3>Contacto</h3>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi itaque, earum, rem voluptas nemo reprehenderit repudiandae esse doloremque ducimus veniam culpa laborum consectetur nobis distinctio. Doloribus totam porro, nihil ullam vero sapiente consectetur dolorem laborum illum? Eligendi exercitationem quia expedita!
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+    <!-- <script>
+        assert.describe("Converter UpperCase", () => {
+            assert(converterToUpperCase(12121) === "12121", "converterToUpperCase(12121) deve retornar '12121'")
+            assert(converterToUpperCase('12121  12121') === '12121  12121', "converterToUpperCase(12121  12121) deve retornar '12121  12121'")
+            assert(converterToUpperCase("são") === "SÃO", "converterToUpperCase('são') deve retornar SÃO")
+            assert(converterToUpperCase("3232texto") === "3232TEXTO", "converterToUpperCase('3232texto') deve retornar '3232TEXTO'")
+            assert(converterToUpperCase("ADFD       adfd") === "ADFD ADFD", "converterToUpperCase('ADFD      adfd') deve retornar ADFD ADFD")
+            assert(converterToUpperCase() === "", "converterToUpperCase('') deve retornar ''")
+            assert(converterToUpperCase("3232 texto") === "3232 TEXTO", "converterToUpperCase('3232 texto') deve retornar '3232 TEXTO'")
+            assert(converterToUpperCase("texto") === "TEXTO", "converterToUpperCase('texto') deve retornar 'TEXTO'")
+            assert(converterToUpperCase("           ") === "", "converterToUpperCase('      ') deve retornar ''")
+            assert(converterToUpperCase("           ADFD") === "ADFD",  'converterToUpperCase("      ADFD") deve retornar ADFD')
+            assert(converterToUpperCase("ADFD           ") === "ADFD", "converterToUpperCase('ADFD      ') deve retornar ADFD")
+            assert(converterToUpperCase("adfg adfw") === "ADFG ADFW", "converterToUpperCase('adfg adfw') deve retornar ADFG ADFW")
+            assert(converterToUpperCase("TEXTO") === "TEXTO", "converterToUpperCase('TEXTO') deve retornar TEXTO ")
+            assert(converterToUpperCase("TexTo") === "TEXTO", "converterToUpperCase('TexTo') deve retornar TEXTO ")
+            assert(converterToUpperCase("çãÁ/*") === "ÇÃÁ/*", "converterToUpperCase('çãÁ/*') deve retornar ÇÃÁ/* ")
+            assert(converterToUpperCase("ção/*") === "ÇÃO/*", "converterToUpperCase('ção/*') deve retornar ÇÃO/*")
+        });
+        assert.describe("Converter ToLowerCase", () => {
+            assert(converterToLowerCase(12121) === "12121", "converterToLowerCase(12121) deve retornar '12121'")
+            assert(converterToLowerCase("3232texto") === "3232texto", "converterToLowerCase('3232texto') deve retornar '3232texto'")
+            assert(converterToLowerCase("3232 texto") === "3232 texto", "converterToLowerCase('3232 texto') deve retornar '3232 texto'")
+            assert(converterToLowerCase("texto") === "texto", "converterToLowerCase('texto') deve retornar 'texto'")
+            assert(converterToLowerCase() === "", "converterToLowerCase('') deve retornar ''")
+            assert(converterToLowerCase("           ") === "", "converterToLowerCase('      ') deve retornar ''")
+            assert(converterToLowerCase("           ADFD") === "adfd",  'converterToLowerCase("      ADFD") deve retornar adfd')
+            assert(converterToLowerCase("ADFD           ") === "adfd", "converterToLowerCase('ADFD      ') deve retornar adfd")
+            assert(converterToLowerCase("ADFD       adfd") === "adfd adfd", "converterToLowerCase('ADFD      adfd') deve retornar adfd adfd")
+            assert(converterToLowerCase("adfg adfw") === "adfg adfw", "converterToLowerCase('adfg adfw') deve retornar adfg adfw")
+            assert(converterToLowerCase("TEXTO") === "texto", "converterToLowerCase('TEXTO') deve retornar texto ")
+            assert(converterToLowerCase("TexTo") === "texto", "converterToLowerCase('TexTo') deve retornar texto ")
+            assert(converterToLowerCase("çãÁ/*") === "çãá/*", "converterToLowerCase('çãÁ/*') deve retornar çãá/*")
+            assert(converterToLowerCase("ção/*") === "ção/*", "converterToLowerCase('ção/*') deve retornar ção/*")
+            assert(converterToLowerCase("são") === "são", "converterToLowerCase('são') deve retornar são")
+        });
+    </script> -->
+
+    <script src="src/spec.js"></script>
+    <script src="src/index.js"></script>
+
 </body>
+
 </html>

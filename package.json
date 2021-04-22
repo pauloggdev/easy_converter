@@ -1,0 +1,26 @@
+{
+  "name": "easy_converter",
+  "version": "1.0.0",
+  "description": "Biblioteca easy converter",
+  "main": "index.js",
+  "scripts": {
+    "lint": ".\\node_modules\\.bin\\eslint src\\*.js",
+    "will": "echo Heyyyyy",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prepare": "husky install"
+  },
+  "keywords": [
+    "js",
+    "easy",
+    "converter"
+  ],
+  "author": "paulodevfullstack@gmail.com <paulodevfullstack@gmail.com> (https://paulodevfullstack.com/)",
+  "license": "MIT",
+  "devDependencies": {
+    "eslint": "^7.21.0",
+    "husky": "^5.1.3"
+  },
+  "dependencies": {
+    "eslint-config-airbnb-base": "^14.2.1"
+  }
+}
