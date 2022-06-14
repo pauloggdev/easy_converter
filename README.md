@@ -1,6 +1,6 @@
 ## EASY CONVERTER
 
-EASY CONVERTER tem objetivo de converter texto de forma 
+[EASY CONVERTER] tem objetivo de converter texto de forma 
 rápida e fácil para maiúscula, minúscula e 
 posteriormente para conversões mais avançadas.
 
